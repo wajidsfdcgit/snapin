@@ -1,16 +1,14 @@
-<html>
-<body>
 <style type='text/css'>
 	.embeddedServiceHelpButton .helpButton .uiButton {
 		background-color: #005290;
-		font-family: "Georgia", sans-serif;
+		font-family: "Arial", sans-serif;
 	}
 	.embeddedServiceHelpButton .helpButton .uiButton:focus {
 		outline: 1px solid #005290;
 	}
 </style>
 
-<script type='text/javascript' src='../esw.min.js'></script>
+<script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
 <script type='text/javascript'>
 	var initESW = function(gslbBaseURL) {
 		embedded_svc.settings.displayHelpButton = true; //Or false
@@ -34,7 +32,7 @@
 			'https://bellckapp-belld2d.cs45.force.com/d2d',
 			gslbBaseURL,
 			'00D8A00000064Dg',
-			'Book_Appointment',
+			'Website_Deployment',
 			{
 				
 			}
@@ -43,7 +41,7 @@
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', '../esw.min.js');
+		s.setAttribute('src', 'https://belld2due--bellckapp.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
@@ -52,6 +50,3 @@
 		initESW('https://service.force.com');
 	}
 </script>
-
-</body>
-</html>
